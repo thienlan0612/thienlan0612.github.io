@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Lan's Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+<style>
+    .custom-font {
+        font-family: 'Pacifico', cursive;
+        color: #cfc7fa;
+    }
+    .contact-info {
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+    .contact:hover .contact-info {
+        opacity: 1;
+    }
+    body, html {
+        margin: 0;
+        padding: 0;
+    }
+
+    .carousel-item img {
+        height: 350px;
+        object-fit: fit;
+    }
+
+
+    @keyframes breakApart {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(0.5);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    @keyframes changeColor {
+    0% { background-color: #4299e1; color: #ffffff; }
+    25% { background-color: #ed64a6; color: #000000; } 
+    50% { background-color: #f6e05e; color: #000000; } 
+    75% { background-color: #48bb78; color: #000000; } 
+    100% { background-color: #4299e1; color: #ffffff; } 
+    }
+    .marquee {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: marquee-text 10s linear infinite;
+}
+
+    @keyframes marquee-text {
+        0% { transform: translateX(100%); }
+        100% { transform: translateX(-100%); }
+    }
+    #logo {
+    animation: changeColor 8s infinite; 
+    }
+</style>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto max-w-screen-xl">
+        <header class="py-8 flex justify-between items-center">
+            <div class="flex items-center">
+                <div id="logo" class="h-24 w-24 flex items-center justify-center rounded-full bg-blue-400">
+                    <h1 id="text" class="text-4xl custom-font text-white">LAN</h1>
+                </div>
+            </div>        
+            <div class="mr-1 relative">
+                <h4 class="custom-font text-2xl cursor-pointer contact">
+                  Contact
+                  <div class="absolute top-full right-0 w-30 bg-white p-4 rounded-md shadow-md contact-info">
+                    <p style="display: inline">lan.pnt.62cntt@ntu.edu.vn</p>
+                    <p style="display: inline;">0399095377</p>
+                  </div>
+                </h4>
+            </div>
+        </header>
+        <!-- Kết thúc header -->
+
+        <main class="bg-gradient-to-b from-purple-500 to-indigo-600 rounded-lg py-16">
+            <div class="mt-4 text-center">
+                <h2 class="text-6xl font-bold text-white italic animate-pulse">HELLO, I'M LAN</h2>
+                <h2 class="text-6xl font-bold text-white italic mt-5 animate-pulse">WELCOME TO MY PORTFOLIO</h2>
+            </div>          
+        </main>
+        <!-- Kết thúc lời chào -->
+        
+        <div class="row border border-2 border-primary rounded mx-auto mt-3">
+            <div class="col-md-6 col-12 d-flex justify-content-center align-items-center">
+                <img src="./images/avatar.jpg" alt="" class="img-fluid mt-3 mb-3 rounded transform hover:scale-110 transition duration-500 ease-in-out" style="animation: breakApart 5s infinite; animation-delay: 2s;">
+            </div>
+            
+            <div class="col-md-6 col-12 d-flex justify-content-center align-items-center ">
+                <div class="col">
+                    <h1 class="text-center">Front-end & Back-end Developer</h1>
+                    <p>Tôi đam mê phát triển web và háo hức được học hỏi về cả hai công nghệ front-end và back-end. Hành trình của tôi bằng kiến thức Công nghệ thông tin được học đã làm cho tôi yêu thích việc tạo ra trải nghiệm website thân thiện với người dùng.</p>
+                    <p>Tôi sở hữu kiến thức cơ bản về HTML, CSS, JavaScript, PHP và ASP.NET bên cạnh đó có tìm hiểu sơ qua về TypeScript và TailWind . Sự tò mò không ngừng hướng tới việc khám phá sâu hơn về những công nghệ này, khiến tôi luôn háo hức đóng góp và phát triển mình trong lĩnh vực phát triển web.</p>
+                    <p>Tìm kiếm cơ hội mở rộng kỹ năng, hợp tác trong các dự án, và có được kinh nghiệm thực tế để phát triển sự nghiệp trong thế giới công nghệ ngày càng phát triển.</p>
+                    
+                    
+                    <div class="border border-2 border-warning rounded mx-auto mb-3">
+                        <div class="row mt-2 justify-content-center ">
+                            <div class="col-md-12 text-center">
+                                <h1>Thông tin cá nhân</h1>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <p class="col-md-3 col-3 font-bold" style="margin-left: 20px">Họ và tên:</p>
+                            <div class="col-md-8 col-8">
+                                <p>Phạm Nguyễn Thiên Lân</p>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <p class="col-md-3 col-3 font-bold" style="margin-left: 20px">Ngày sinh:</p>
+                            <div class="col-md-8 col-8">
+                                <p>06/12/2002</p>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <p class="col-md-3 col-3 font-bold" style="margin-left: 20px">Kỹ năng:</p>
+                            <div class="col-md-8 col-8">
+                                <div class="col">
+                                    <p>Kỹ năng làm việc nhóm </p>
+                                    <p>Kỹ năng giao tiếp và giải quyết vấn đề.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <p class="col-md-3 col-3 font-bold" style="margin-left: 20px">Ngôn ngữ:</p>
+                            <div class="col-md-8 col-8">
+                                <div class="col">
+                                    <p>HTML, CSS, JavaScript, PHP, C# (ASP.NET MVC). </p>
+                                    <p>Cơ bản về TypeScript, Tailwind CSS, SCSS. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <p class="col-md-3 col-3 font-bold" style="margin-left: 20px">Học vấn:</p>
+                            <div class="col-md-8 col-8">
+                                <div class="col">
+                                    <p>Sinh viên năm 4 trường Đại học Nha Trang</p>
+                                    <p>Điểm trung bình: 7.98. Xem chi tiết <a href="#" data-bs-toggle="modal" data-bs-target="#gradeModal" class="text-decoration-none text-primary">tại đây</a></p>
+                                    <p>
+                                        Học bổng loại giỏi năm học 2022-2023
+                                    </p>
+                                    <p>
+                                        Học bổng khá và giỏi năm học 2021-2022
+                                    </p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <p class="col-md-3 col-3 font-bold" style="margin-left: 20px">Sở thích:</p>
+                            <div class="col-md-8 col-8">
+                                <p>Đá bóng, đi phượt.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!-- Kết thúc giới thiệu về bản thân -->
+
+        <div class="row border border-2 border-warning rounded mx-auto mt-3">
+            <div class="col-md-6 col-12">
+                <div class="border border-2 border-warning rounded mx-auto mb-3 mt-3">
+                    <div class="row mt-2 justify-content-center ">
+                        <div class="col-md-12 text-center">
+                            <h1>ITHUB</h1>
+                        </div>
+                        <div class="col-md-12 mt-2">
+                            <div class="row">
+                                <div class="col-md-3 col-3">
+                                    <p class="mx-3 font-bold">Mô tả:</p>
+                                </div>
+                                <div class="col-md-9 col-9">
+                                    Dự án "Xây dựng website ITHUB - Chia sẻ tài liệu, 
+                                    diễn đàn học tập và chat real-time" là một ví dụ minh họa cho việc áp dụng kiến thức và thực hành quy trình phát triển phần mềm mã nguồn mở.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 mt-2">
+                            <div class="row">
+                                <div class="col-md-3 col-3">
+                                    <p class="mx-3 font-bold">Thành viên:</p>
+                                </div>
+                                <div class="col-md-9 col-9">
+                                    5 thành viên
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 mt-2">
+                            <div class="row">
+                                <div class="col-md-3 col-3">
+                                    <p class="mx-3 font-bold">Ngôn ngữ:</p>
+                                </div>
+                                <div class="col-md-9 col-9">
+                                    Sử dụng ngôn ngữ HTML, CSS, PHP, JS để xây dựng và phát triển website diễn đàn để trao đổi học tập.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 mt-2 ">
+                            <div class="row">
+                                <div class="col-md-3 col-3">
+                                    <p class="mx-3 font-bold">Công cụ:</p>
+                                </div>
+                                <div class="col-md-9 col-9">
+                                    Visual Studio 2022, Xampp.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 mt-2">
+                            <div class="row">
+                                <div class="col-md-3 col-3">
+                                    <p class="mx-3 font-bold">Link dự án:</p>
+                                </div>
+                                <div class="col-md-9 col-9">
+                                    <a href="https://github.com/ITHub-NTU/ITHub">https://github.com/ITHub-NTU/ITHub</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-12 mt-3 mb-3 justify-content-center align-items-center">
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-interval="1000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img src="./images/ITHUB/4.png" class="img-fluid" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="./images/ITHUB/5.png" class="img-fluid" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="./images/ITHUB/6.png" class="img-fluid" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="./images/ITHUB/7.png" class="img-fluid" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="./images/ITHUB/8.png" class="img-fluid" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="./images/ITHUB/10.png" class="img-fluid" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="./images/ITHUB/11.png" class="img-fluid" alt="...">
+                        </div>
+                    </div>
+
+                 
+                    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon bg-warning" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon bg-warning" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button> -->
+                </div>
+            </div>
+        </div>
+        <!-- Kết thúc Project1 -->
+
+        <div class="row border border-2 border-warning rounded mx-auto mt-3">
+            <div class="col-md-6 col-12 mt-3 mb-3 justify-content-center align-items-center">
+                <div id="carouselExample1" class="carousel slide" data-bs-ride="carousel" data-interval="1000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./images/AlthogithmSort/1.png" class="img-fluid w-100" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/AlthogithmSort/2.png" class="img-fluid w-100" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/AlthogithmSort/3.png" class="img-fluid w-100" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/AlthogithmSort/4.png" class="img-fluid w-100" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-6 col-12">
+                <div class="border border-2 border-warning rounded mx-auto mb-3 mt-3 pb-3">
+                    <div class="row mt-2 justify-content-center ">
+                        <div class="col-md-12 text-center">
+                            <h1>AlthogithmSort</h1>
+                        </div>
+                        <div class="col-md-12 mt-2">
+                            <div class="row">
+                                <div class="col-md-3 col-3">
+                                    <p class="mx-3 font-bold">Mô tả:</p>
+                                </div>
+                                <div class="col-md-9 col-9">
+                                    Dự án này là sản phẩm được thực hiện trong môn học Thực tập Cơ sở. 
+                                    Nó tập trung vào việc hiểu và thể hiện hoạt động của các thuật toán sắp xếp như BubbleSort, InterchangeSort, SelectionSort.
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                        <div class="col-md-12 mt-2">
+                            <div class="row">
+                                <div class="col-md-3 col-3">
+                                    <p class="mx-3 font-bold">Ngôn ngữ:</p>
+                                </div>
+                                <div class="col-md-9 col-9">
+                                    Sử dụng ngôn ngữ C# kết hợp với các giải thuật BubbleSort, InterchangeSort, SelectionSort để tạo ứng dụng minh họa hoạt động của các thuật toán này.
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-12 mt-2 ">
+                            <div class="row">
+                                <div class="col-md-3 col-3">
+                                    <p class="mx-3 font-bold">Công cụ:</p>
+                                </div>
+                                <div class="col-md-9 col-9">
+                                    Visual Studio Code.
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-12 mt-2">
+                            <div class="row">
+                                <div class="col-md-3 col-3">
+                                    <p class="mx-3 font-bold">Link dự án:</p>
+                                </div>
+                                <div class="col-md-9 col-9">
+                                    <a href="https://github.com/Thien-Lan/thuctapcoso_AlthogithmSort">https://github.com/Thien-Lan/thuctapcoso_AlthogithmSort</a>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="bg-gradient-to-b from-purple-500 to-indigo-600 rounded-lg mt-3 text-white ">
+            <div class="row">
+                <div class="col-md-6 mt-5 flex justify-center items-center">
+                    <div class="h-20 w-20 flex items-center justify-center rounded-full bg-blue-400 animate-bounce">
+                        <h1 class="text-4xl custom-font text-white">LAN</h1>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center mt-4">
+                    <a href="https://www.facebook.com/TL06122002/" style="font-size: 30px;"class="btn"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/lan.ph06/" style="font-size: 30px;"class="btn"><i class="fa-brands fa-instagram"></i></a>
+                    <p>Email: lan.pnt.62cntt@ntu.edu.vn</p>
+                    <p>Phone: 0399095377</p>
+                </div>
+            </div>
+            
+            
+            <div class="text-center mt-4">
+                <p class="marquee">&copy; Phạm Nguyễn Thiên Lân</p>
+            </div>
+            
+        </footer>
+        
+
+    </div>
+
+
+    <div class="modal fade" id="gradeModal" tabindex="-1" aria-labelledby="gradeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="gradeModalLabel">Bảng Điểm</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <embed src="./images/bangdiem.pdf" type="application/pdf" width="100%" height="600px" />
+            </div>
+          </div>
+        </div>
+    </div>
+
+  
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
