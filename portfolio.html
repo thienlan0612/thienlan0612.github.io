@@ -1,0 +1,121 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Lan's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <style>
+        .custom-font {
+            font-family: 'Pacifico', cursive;
+            color: #cfc7fa;
+        }
+        .contact-info {
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+        .contact:hover .contact-info {
+            opacity: 1;
+        }
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    </head>
+    <body class="bg-gray-100">
+        <div class="container mx-auto max-w-screen-xl">
+            <header class="py-8 flex justify-between items-center">
+                <div class="flex items-center">
+                    <div class="h-24 w-24 flex items-center justify-center rounded-full bg-blue-400">
+                      <h1 class="text-4xl custom-font text-white">LAN</h1>
+                    </div>
+                  </div>
+                  <div class="mr-1 relative">
+                    <h4 class="custom-font text-2xl cursor-pointer contact">
+                      Contact
+                      <div class="absolute top-full right-0 w-30 bg-white p-4 rounded-md shadow-md contact-info">
+                        <p style="display: inline">lan.pnt.62cntt@ntu.edu.vn</p>
+                        <p style="display: inline;">0399095377</p>
+                      </div>
+                    </h4>
+                  </div>
+            </header>
+        
+            <main class="bg-gradient-to-b from-purple-500 to-indigo-600 rounded-lg py-16">
+                <div class="mt-4 text-center">
+                    <h2 class="text-7xl font-bold text-white italic animate-pulse">HELLO, I'M LAN</h2>
+                    <h2 class="text-7xl font-bold text-white italic mt-5 animate-pulse">WELCOME TO MY PORTFOLIO</h2>
+                </div>          
+            </main>
+            <div class="row border border-2 border-primary rounded mx-auto mt-3">
+                <div class="col-md-6 col-12 d-flex justify-content-center align-items-center">
+                    <img src="./images/avatar.jpg" alt="" class="img-fluid mt-3 mb-3 rounded">
+                </div>
+                <div class="col-md-6 col-12 d-flex justify-content-center align-items-center ">
+                    <div class="col">
+                        <h1 class="text-center">Front-end & Back-end Developer</h1>
+                        <p>Xin chào! Tôi đam mê phát triển web và háo hức được học hỏi về cả hai công nghệ front-end và back-end. Hành trình của tôi sau khi mới tốt nghiệp ngành Công nghệ thông tin đã làm cho tôi yêu thích việc tạo ra trải nghiệm website thân thiện với người dùng.</p>
+                        <p>Tôi sở hữu kiến thức cơ bản về HTML, CSS, JavaScript, PHP và ASP.NET bên cạnh đó có tìm hiểu sơ qua về TypeScript và TailWind . Sự tò mò không ngừng hướng tới việc khám phá sâu hơn về những công nghệ này, khiến tôi luôn háo hức đóng góp và phát triển mình trong lĩnh vực phát triển web.</p>
+                        <p>Tìm kiếm cơ hội mở rộng kỹ năng, hợp tác trong các dự án, và có được kinh nghiệm thực tế để phát triển sự nghiệp trong thế giới công nghệ ngày càng phát triển.</p>
+                        <div class="border border-2 border-warning rounded mx-auto">
+                            <div class="row mt-2">
+                                <p class="col-md-3 font-bold">Họ và tên:</p>
+                                <div class="col-md-9">
+                                    <p>Phạm Nguyễn Thiên Lân</p>
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <p class="col-md-3 font-bold">Ngày sinh:</p>
+                                <div class="col-md-9">
+                                    <p>06/12/2002</p>
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <p class="col-md-3 font-bold">Kỹ năng mềm:</p>
+                                <div class="col-md-9">
+                                    <p>Kỹ năng làm việc nhóm, Kỹ năng giao tiếp và giải quyết vấn đề.</p>
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <p class="col-md-3 font-bold">Học vấn:</p>
+                                <div class="col-md-9">
+                                    <div class="col">
+                                        <p>Sinh viên năm 4 trường Đại học Nha Trang</p>
+                                        <p>Điểm trung bình: 7.98. Xem chi tiết <a href="#" data-bs-toggle="modal" data-bs-target="#gradeModal" class="text-decoration-none text-primary">tại đây</a></p>
+                                        <p>
+                                            Học bổng loại giỏi năm học 2022-2023
+                                        </p>
+                                        <p>
+                                            Học bổng khá và giỏi năm học 2021-2022
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+
+            <div class="modal fade" id="gradeModal" tabindex="-1" aria-labelledby="gradeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="gradeModalLabel">Bảng Điểm</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <embed src="./images/bangdiem.pdf" type="application/pdf" width="100%" height="600px" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </body>
+    </html>
